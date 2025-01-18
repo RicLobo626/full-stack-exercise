@@ -16,6 +16,18 @@ const theme = createTheme({
       contrastText: "#003134",
     },
   },
+  components: {
+    MuiCard: {
+      defaultProps: {
+        variant: "outlined",
+      },
+    },
+    MuiPaper: {
+      defaultProps: {
+        variant: "outlined",
+      },
+    },
+  },
 });
 
 const globalStyles = (
