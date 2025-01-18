@@ -3,6 +3,9 @@ import { CssBaseline, GlobalStyles, ThemeProvider } from "@mui/material";
 import { ReactNode } from "react";
 
 const theme = createTheme({
+  typography: {
+    fontFamily: ["Open Sans", "Arial", "sans-serif"].join(","),
+  },
   palette: {
     primary: {
       main: "#60a5fa",
