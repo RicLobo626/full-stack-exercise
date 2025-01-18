@@ -25,6 +25,8 @@ export const SecurityPage = () => {
       text: "Price/Volume History",
       style: {
         color: "#64748b",
+        fontSize: "1rem",
+        fontWeight: "normal",
       },
     },
 
@@ -69,7 +71,11 @@ export const SecurityPage = () => {
 
   return (
     <Card>
-      <CardHeader component="header" title={`${security.ticker} - ${security.securityName}`} />
+      <CardHeader
+        component="header"
+        title={`${security.ticker} - ${security.securityName}`}
+        titleTypographyProps={{ variant: "h6" }}
+      />
 
       <CardContent>
         <Box component="section" sx={{ marginBlockEnd: "2rem" }}>
