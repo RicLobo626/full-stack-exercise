@@ -39,7 +39,6 @@ export const TheHeader = () => {
               mr: 2,
               display: { md: "flex" },
               fontSize: { xs: "1.2rem", sm: "1.6rem", md: "1.8rem" },
-              fontFamily: "monospace",
               fontWeight: 700,
               letterSpacing: ".2rem",
               color: "primary.main",
