@@ -26,7 +26,7 @@ export const TheHeader = () => {
   };
 
   return (
-    <AppBar position="static">
+    <AppBar position="static" sx={{ backgroundColor: "white", borderInline: 0, borderTop: 0 }}>
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <Insights sx={{ display: { color: "white" }, mr: 1 }} />
@@ -38,11 +38,11 @@ export const TheHeader = () => {
             sx={{
               mr: 2,
               display: { md: "flex" },
-              fontSize: { xs: "1.2rem", sm: "1.6rem", md: "2rem" },
+              fontSize: { xs: "1.2rem", sm: "1.6rem", md: "1.8rem" },
               fontFamily: "monospace",
               fontWeight: 700,
               letterSpacing: ".2rem",
-              color: "white",
+              color: "primary.main",
               textDecoration: "none",
             }}
           >
@@ -63,7 +63,7 @@ export const TheHeader = () => {
                 component={Link}
                 key={page.text}
                 to={page.to}
-                color="inherit"
+                variant="outlined"
                 sx={{ display: { xs: "none", sm: "flex", marginLeft: "auto" } }}
               >
                 {page.text}
@@ -77,7 +77,7 @@ export const TheHeader = () => {
                 aria-controls="menu-appbar"
                 aria-haspopup="true"
                 onClick={handleOpenNavMenu}
-                color="inherit"
+                color="primary"
               >
                 <MenuIcon />
               </IconButton>
@@ -101,7 +101,6 @@ export const TheHeader = () => {
                   <MenuItem
                     component={Link}
                     to={page.to}
-                    color="inherit"
                     key={page.text}
                     onClick={handleCloseNavMenu}
                   >
