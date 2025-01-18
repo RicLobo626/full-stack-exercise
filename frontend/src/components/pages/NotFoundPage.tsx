@@ -54,13 +54,7 @@ export const NotFoundPage = ({
         <SentimentVeryDissatisfied fontSize="large" aria-hidden="true" />
       </Typography>
 
-      <Button
-        component={Link}
-        startIcon={<Home />}
-        to="/"
-        variant="contained"
-        sx={{ marginBlockStart: "1rem" }}
-      >
+      <Button component={Link} startIcon={<Home />} to="/" sx={{ marginBlockStart: "1rem" }}>
         Back to Home
       </Button>
     </Box>

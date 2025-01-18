@@ -33,7 +33,6 @@ export const SecuritiesPage = () => {
             aria-label="Retry fetching securities"
             color="inherit"
             size="small"
-            variant="outlined"
           >
             Retry
           </Button>

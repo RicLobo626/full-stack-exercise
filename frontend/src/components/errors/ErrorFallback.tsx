@@ -15,7 +15,6 @@ export const ErrorFallback = ({ onReset }: Props) => {
           onClick={onReset}
           startIcon={<Refresh />}
           color="inherit"
-          variant="outlined"
           sx={{ marginBlock: "auto", marginInlineEnd: "1rem" }}
         >
           Reset

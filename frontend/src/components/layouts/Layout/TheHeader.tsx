@@ -63,7 +63,6 @@ export const TheHeader = () => {
                 component={Link}
                 key={page.text}
                 to={page.to}
-                variant="outlined"
                 sx={{ display: { xs: "none", sm: "flex", marginLeft: "auto" } }}
               >
                 {page.text}
