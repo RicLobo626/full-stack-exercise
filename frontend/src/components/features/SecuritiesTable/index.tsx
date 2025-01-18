@@ -123,7 +123,7 @@ export const SecuritiesTable = ({ onRowClick, securities, loading }: SecurityTab
   ];
 
   return (
-    <TableContainer component={Paper} elevation={0} sx={{ border: 1, borderColor: "lightgray" }}>
+    <TableContainer component={Paper}>
       <Table aria-label="securities table" size="small">
         <SecuritiesTableHead headers={headers} />
 
