@@ -23,6 +23,9 @@ export const SecurityPage = () => {
   const options: Highcharts.Options = {
     title: {
       text: "Price/Volume History",
+      style: {
+        color: "#64748b",
+      },
     },
 
     xAxis: {

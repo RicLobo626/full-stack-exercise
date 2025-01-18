@@ -11,6 +11,9 @@ const theme = createTheme({
       main: "#60a5fa",
       contrastText: "#fff",
     },
+    text: {
+      primary: "#475569",
+    },
   },
   components: {
     MuiCard: {
