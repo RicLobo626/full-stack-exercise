@@ -26,15 +26,10 @@ type SecuritiesTableHeadProps = {
 
 export const SecuritiesTableHead = ({ headers }: SecuritiesTableHeadProps) => {
   return (
-    <TableHead sx={{ backgroundColor: "primary.main" }}>
+    <TableHead>
       <TableRow>
         {headers.map((header) => (
-          <TableCell
-            key={header.title}
-            sx={{ color: "secondary.main" }}
-            {...header.props}
-            scope="col"
-          >
+          <TableCell key={header.title} {...header.props} scope="col">
             {header.title}
           </TableCell>
         ))}
@@ -57,7 +52,7 @@ const SecuritiesTableBody = ({ onRowClick, securities }: SecuritiesTableBodyProp
   };
 
   return (
-    <TableBody sx={{ borderColor: "primary.main" }}>
+    <TableBody>
       {securities.map((security) => (
         <TableRow
           onClick={handleRowClick(security)}
@@ -77,7 +72,7 @@ const SecuritiesTableBody = ({ onRowClick, securities }: SecuritiesTableBodyProp
               to={`/securities/${security.ticker}`}
               aria-label="View security details"
             >
-              <Visibility sx={{ color: "primary.main" }} />
+              <Visibility color="primary" />
             </IconButton>
           </TableCell>
 
@@ -86,11 +81,11 @@ const SecuritiesTableBody = ({ onRowClick, securities }: SecuritiesTableBodyProp
           <TableCell>{security.sector}</TableCell>
           <TableCell>{security.country}</TableCell>
           <TableCell
+            align="center"
             sx={{
               color: "white",
               backgroundColor: getTrendColor(security.trend),
             }}
-            align="center"
           >
             {getPercentage(security.trend)}
           </TableCell>
