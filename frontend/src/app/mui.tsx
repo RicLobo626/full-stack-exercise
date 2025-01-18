@@ -4,16 +4,9 @@ import { ReactNode } from "react";
 
 const theme = createTheme({
   palette: {
-    background: {
-      default: "#e2e8f0",
-    },
     primary: {
-      main: "#003134",
-      contrastText: "#aec1c2",
-    },
-    secondary: {
-      main: "#aec1c2",
-      contrastText: "#003134",
+      main: "#60a5fa",
+      contrastText: "#fff",
     },
   },
   components: {
